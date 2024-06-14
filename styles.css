@@ -5,6 +5,7 @@ body {
 *{
     margin: 0;
     padding: 0;
+    letter-spacing: 0.5px;
 }
 
 .main-container {
@@ -19,8 +20,7 @@ body {
 .sidebar{
     display: grid;
     min-width: 262px;
-    background-color: rgb(70, 15, 165, 0.5);
-    
+    background-color: rgb(50, 8, 146, 0.75);
     grid-template-rows: 100px repeat(8, 35px) ;
     gap: 20px;
     height: 100vh;
@@ -40,12 +40,37 @@ body {
     margin-left: 30px;
 }   
 
-.sidebar>span>img:nth-child(1) {
+
+
+.sidebar span:not(:first-child){
+    display: flex;
+    font-size: 1rem;  
+    align-items: center;
+    margin-left: 45px;
+}   
+
+.sidebar span:not(:first-child):hover {
+    background-color: rgb(71, 49, 122);
+    border-radius: 10px;
+    outline: 10px solid rgb(71, 49, 122);
+    cursor: pointer;
+
+}
+
+.sidebar span:nth-child(1) img {
     margin-right: 15px;
     height: 50px;
     width: 50px;
-    
 }
+
+
+.sidebar span:not(:first-child) img {
+    margin-right: 20px;
+    height: 30px;
+    width: 30px;
+ 
+}
+
 
 .sidebar span:nth-child(n+7):nth-child(-n+10)  {
     margin-top: 80px; 
@@ -94,7 +119,6 @@ input {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    outline: 1px solid red;
     height: 80%;
 }
 
