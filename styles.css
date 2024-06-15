@@ -80,7 +80,7 @@ body {
 }
 
 
-/* header */
+/* header*/
 
 .header{
     display: grid;
@@ -94,6 +94,8 @@ body {
 .header>span:nth-child(3) {
     margin-top: 20px;
 }
+
+/* header upper left */
 
 .search-field-and-icon-container {
     display: grid;
@@ -127,6 +129,9 @@ input:focus {
     width: 30px;
 }
 
+
+/* header upper right */
+
 .header-upper-right-container {
     display: grid;
     grid-auto-flow: column;
@@ -147,26 +152,18 @@ input:focus {
     cursor: pointer; 
     border-radius: 20px;
     transition: background-color 0.5s;
-
-    
 }
 
 #bell-icon-header-upper-right:hover  {
     background-color: rgb(71, 49, 122, 0.7);
     transition: 0.2s;
-
 }
 
 
 #profile-pic-header-upper-right {
     height: 50px;
     width: 50px;
-   
 }
-
-
-
-
 
 .header-upper-right-container div {
     gap: 10px;
@@ -185,14 +182,39 @@ input:focus {
     transition: 0.2s;
 }
 
+/* header bottom left */
+
+.header-bottom-left-text-container {
+    display: grid;
+    font-weight: bold;
+    align-items: center;
+}
+
+.header-bottom-left-text-container>span:nth-child(2) {
+    font-size: 1.5rem;
+}
+
+#profile-pic-bottom-left {
+    height: 70px;
+    width: 70px;;
+}
+
+.header-bottom-left-profile-pic-and-text-container {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: left;
+    align-items: center;
+    margin-left: 40px;
+    gap: 20px;
+}
+
 
 
 .header-button-container {
     display: grid;
     grid-auto-flow: column;
-    gap: 40px;
     justify-content: end;
-    align-items: end;
+    align-items: center;
     margin: 20px;
    
 }
