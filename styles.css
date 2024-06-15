@@ -292,12 +292,18 @@ input:focus {
     font-size: 1rem;
     overflow: auto;
     box-shadow: 0px 1px 5px 0px rgba(119, 119, 119);
-
 }
 
-/* .main-content>div:nth-child(n+4):nth-child(-n+9) {
-    position: relative;
-} */
+.main-content>div:nth-child(n+4):hover {
+
+  cursor: pointer;
+  outline: 4px solid rgb(94, 64, 169);
+  
+}
+
+
+
+
 
 .main-content>div>h2, .main-content>div>p   {
     margin: 40px;
@@ -314,56 +320,12 @@ input:focus {
    font-weight: 400;
 }
 
-.purple-line1 {
+.purple-line {
     position: absolute;
-    grid-row: 2/3;
     background-color: rgb(94, 64, 169);
     width: 10px;
     height: 100%;
 }
-
-.purple-line2 {
-    position: absolute;
-    grid-row: 2/3;
-    background-color: rgb(94, 64, 169);
-    width: 10px;
-    height: 100%;
-}
-
-.purple-line3 {
-    position: absolute;
-    grid-row: 2/3;
-    background-color: rgb(94, 64, 169);
-    width: 10px;
-    height: 100%;
-}
-
-.purple-line4 {
-    position: absolute;
-    grid-row: 2/3;
-    background-color: rgb(94, 64, 169);
-    width: 10px;
-    height: 100%;
-}
-
-.purple-line5 {
-    position: absolute;
-    grid-row: 2/3;
-    background-color: rgb(94, 64, 169);
-    width: 10px;
-    height: 100%;
-}
-
-.purple-line6 {
-    position: absolute;
-    grid-row: 2/3;
-    background-color: rgb(94, 64, 169);
-    width: 10px;
-    height: 100%;
-}
-
-
-
 
 .my-projects-text {
    
