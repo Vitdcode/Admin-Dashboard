@@ -209,6 +209,8 @@ input:focus {
 }
 
 
+/* header bottom right */
+
 
 .header-button-container {
     display: grid;
@@ -216,23 +218,27 @@ input:focus {
     justify-content: end;
     align-items: center;
     margin: 20px;
+    
    
 }
 
 .header-button-container>button{
     height: 40px;
     width: 100px;
+    font-weight: bold;
     border-radius: 16px;
     border: 0;
     margin-right: 40px;
     background-color: rgb(50, 8, 146, 0.75);
     color: white;
     font-size: 0.9rem;
+    transition: 0.8s;
 }
 
 .header-button-container>button:hover{
     background-color: rgb(71, 49, 122);
     cursor: pointer;
+    transition: 0.2s;
 }
 
 
