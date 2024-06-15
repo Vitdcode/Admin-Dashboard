@@ -46,14 +46,14 @@ body {
     font-size: 1rem;  
     align-items: center;
     margin-left: 35px;
-    transition: 0.5s;
     padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.5s;
     
 }   
 
 .sidebar span:not(:first-child):hover {
     background-color: rgb(71, 49, 122);
-    border-radius: 10px;
     border: none;
     cursor: pointer;
     transition: 0.2s
@@ -127,7 +127,63 @@ input:focus {
     width: 30px;
 }
 
+.header-upper-right-container {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
 
+
+
+#bell-icon-header-upper-right {
+    height: 30px;
+    width: 30px;   
+    padding: 10px;
+    margin-right: 30px;
+    cursor: pointer; 
+    border-radius: 20px;
+    transition: background-color 0.5s;
+
+    
+}
+
+#bell-icon-header-upper-right:hover  {
+    background-color: rgb(71, 49, 122, 0.7);
+    transition: 0.2s;
+
+}
+
+
+#profile-pic-header-upper-right {
+    height: 50px;
+    width: 50px;
+   
+}
+
+
+
+
+
+.header-upper-right-container div {
+    gap: 10px;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 20px;
+    transition:  background-color 0.5s;
+}
+
+.header-upper-right-container div:hover{
+    background-color: rgb(71, 49, 122, 0.7);
+    transition: 0.2s;
+}
 
 
 
