@@ -26,7 +26,6 @@ body {
     height: 100vh;
     justify-items: start;
     align-items: start;
-    
     font-size: 1.5rem;
     font-weight: bolder;
     color: white;
@@ -81,14 +80,25 @@ body {
 
 .header{
     display: grid;
-    height: 20%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: minmax(40px, 50px) minmax(100px, 250px);
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: minmax(40px, 80px) minmax(90px, 110px);
     grid-column: 1/3;
+    box-shadow: 1px 0px 5px -1px rgba(0,0,0,0.68);
+
 }
 
 .header>span:nth-child(3) {
     margin-top: 20px;
+}
+
+.search-field-and-icon-container {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
 }
 
 input {
@@ -96,19 +106,47 @@ input {
     border: 0;
     outline: transparent;
     background-color: rgb(226, 232, 240);
+    height: 40px;
+    font-size: 1.3rem;
+    padding: 0 10px;
+    color: rgb(119, 117, 117);
 }
 
-.header-button-container{
-    display: flex;
-    gap: 30px;
+
+.search-field-and-icon-container img {
+    margin-left: 40px;
+    height: 30px;
+    width: 30px;
+}
+
+
+
+
+
+.header-button-container {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 40px;
     justify-content: end;
     align-items: end;
     margin: 20px;
+   
 }
 
 .header-button-container>button{
-    height: 20px;
-    width: 50px;
+    height: 40px;
+    width: 100px;
+    border-radius: 16px;
+    border: 0;
+    margin-right: 40px;
+    background-color: rgb(50, 8, 146, 0.75);
+    color: white;
+    font-size: 0.9rem;
+}
+
+.header-button-container>button:hover{
+    background-color: rgb(71, 49, 122);
+    cursor: pointer;
 }
 
 
