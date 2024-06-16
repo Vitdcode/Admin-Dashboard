@@ -189,8 +189,20 @@ input:focus {
 
 /* header bottom left */
 
+.header-bottom-left-profile-pic-and-text-container {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: left;
+    align-items: center;
+    margin-left: 40px;
+    gap: 20px;
+}
+
+
 .header-bottom-left-text-container {
     display: grid;
+    grid-auto-flow: row;
+    position: relative;
     font-weight: bold;
     align-items: center;
 }
@@ -199,18 +211,31 @@ input:focus {
     font-size: 1.5rem;
 }
 
-#profile-pic-bottom-left {
-    height: 70px;
-    width: 70px;;
+.purple-line-header-bottom-left {
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: rgb(71, 49, 122, 0.9);
+    transition: 400ms ease-in-out;
 }
 
-.header-bottom-left-profile-pic-and-text-container {
-    display: grid;
-    grid-auto-flow: column;
-    justify-content: left;
-    align-items: center;
-    margin-left: 40px;
-    gap: 20px;
+.profile-pic-bottom-left:hover ~ .header-bottom-left-text-container span:nth-child(2) .purple-line-header-bottom-left {
+    width: 100%;
+    transition: 400ms ease-in-out;
+}
+
+.profile-pic-bottom-left  {
+    height: 70px;
+    width: 70px;
+    transition: 300ms ease-in-out;
+    
+}
+
+.profile-pic-bottom-left:hover{
+    cursor: pointer;
+    height: 80px;
+    width: 80px;
+    transition: 300ms ease-in-out;
 }
 
 
@@ -323,8 +348,10 @@ input:focus {
     text-wrap: balance;
 }
 
-.main-content>div>h2 {
-    border-radius: 10px;
+.main-content>div h2 {
+    color: rgb(71, 49, 122, 0.9);
+	line-height: 40px;
+	border-bottom: 1px solid rgba(69, 53, 129, 0.3);
 }
 
 .main-content>div>p {
@@ -387,7 +414,6 @@ input:focus {
     grid-column: 1/2;
     font-size: 1.5rem;
     font-weight: bold;
-    /* background-image: linear-gradient(to left, #553c9a, #b393d3); */
     background-image: linear-gradient(to left, #472e8d, #7845cc);
     color: transparent;
     background-clip: text;
