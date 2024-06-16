@@ -296,17 +296,31 @@ input:focus {
     box-shadow: 0px 1px 5px 0px rgba(119, 119, 119);
 }
 
+
 .main-content>div:nth-child(n+4):hover {
-
   cursor: pointer;
-  outline: 4px solid rgb(94, 64, 169);
-
 }
 
+.main-content>div:nth-child(n+4) .purple-line {
+    height: 0;
+    transition: 600ms;
+}
+
+
+.main-content>div:nth-child(n+4):hover .purple-line {
+
+    cursor: pointer;
+    height: 100%;
+    transition: 600ms ease-in-out;
+  
+  }
+
 .main-content>div>h2, .main-content>div>p   {
-    margin: 40px;
+   margin-left: 40px;
+   margin-right: 40px;
+   margin-bottom: 40px;
+   margin-top: 15px;
     text-wrap: balance;
-    
 }
 
 .main-content>div>h2 {
@@ -319,7 +333,7 @@ input:focus {
 }
 
 
-.icons-inside-tracks-container {
+.icons-inside-tracks-container-bottom-right {
     display: flex;
     justify-content: end;
     align-self: end;
@@ -328,15 +342,36 @@ input:focus {
 }
 
 
-.icons-inside-tracks-container img {
+.icons-inside-tracks-container-bottom-right img {
     height: 30px;
     width: 30px;
 }
 
-.icons-inside-tracks-container img:hover {
+.icons-inside-tracks-container-bottom-right img:hover {
     cursor: pointer; 
     border-bottom: 2px solid rgb(71, 49, 122);
-    
+}
+
+.app-icon-and-text-container img {
+    height: 60px;
+    width: 60px; 
+    transition: 300ms;  
+}
+
+.main-content>div:nth-child(n+4):hover .app-icon {
+    height: 80px;
+    width: 80px;
+    transition: 300ms ease-in-out;
+   
+}
+
+.app-icon-and-text-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 20px;
 }
 
 .purple-line {
@@ -346,12 +381,14 @@ input:focus {
     height: 100%;
 }
 
+
 .my-projects-text {
    
     grid-column: 1/2;
     font-size: 1.5rem;
     font-weight: bold;
-    background-image: linear-gradient(to left, #553c9a, #b393d3);
+    /* background-image: linear-gradient(to left, #553c9a, #b393d3); */
+    background-image: linear-gradient(to left, #472e8d, #7845cc);
     color: transparent;
     background-clip: text;
 	line-height: 40px;
@@ -364,7 +401,7 @@ input:focus {
     grid-column: 3/4;
     font-size: 1.5rem;
     font-weight: bold;
-    background-image: linear-gradient(to left, #553c9a, #b393d3);
+    background-image: linear-gradient(to left, #472e8d, #7845cc);
     color: transparent;
     background-clip: text;
 	line-height: 40px;
@@ -378,7 +415,7 @@ input:focus {
     font-weight: bold;
     margin-top: 140px;
     margin-bottom: 100px; /* using margin bottom to move the border bottom line under the text */
-    background-image: linear-gradient(to left, #553c9a, #b393d3);
+    background-image: linear-gradient(to left, #472e8d, #7845cc);
     color: transparent;
     background-clip: text;
 	border-bottom: 1px solid rgba(69, 53, 129, 0.3);
