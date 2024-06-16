@@ -160,7 +160,7 @@ input:focus {
 }
 
 #bell-icon-header-upper-right:hover  {
-    background-color: rgb(71, 49, 122, 0.7);
+    background-color: rgb(71, 49, 122, 0.9);
     transition: 0.2s;
 }
 
@@ -183,7 +183,7 @@ input:focus {
 }
 
 .header-upper-right-container div:hover{
-    background-color: rgb(71, 49, 122, 0.7);
+    background-color: rgb(71, 49, 122, 0.9);
     transition: 0.2s;
 }
 
@@ -205,6 +205,7 @@ input:focus {
     position: relative;
     font-weight: bold;
     align-items: center;
+    color: rgba(49, 49, 49, 0.74);
 }
 
 .header-bottom-left-text-container>span:nth-child(2) {
@@ -225,6 +226,8 @@ input:focus {
 }
 
 .profile-pic-bottom-left  {
+
+   
     height: 70px;
     width: 70px;
     transition: 300ms ease-in-out;
@@ -232,6 +235,7 @@ input:focus {
 }
 
 .profile-pic-bottom-left:hover{
+
     cursor: pointer;
     height: 80px;
     width: 80px;
@@ -451,8 +455,19 @@ input:focus {
     color: rgb(71, 49, 122, 0.9);
 }
 
+.text-seperation-line{
+    display: grid;
+    justify-self: center;
+    align-items: center;
+    height: 2px;
+    width: 75%;
+    margin-top: -10px;
+    background-color: rgb(221, 221, 221);
+}
+
 .main-content-grid-8 {
-    
+    display: grid;
+    align-items: center;
     grid-column: 3/4;
     grid-row: 3/5;
     margin-top: 200px;
@@ -462,16 +477,43 @@ input:focus {
     
 }
 
-.text-seperation-line{
-    display: grid;
-    justify-self: center;
-    align-items: center;
-    height: 2px;
-    width: 75%;
-    margin-top: -10px;
-    /* margin-bottom: 10px; */
-    background-color: rgb(221, 221, 221);
-    
-
+.trending-profile-pic {
+    height: 40px;
+    width: 40px;
 }
 
+.grid8-img-with-text-container {
+    display: grid;
+    gap: 10px;
+    align-items: center;
+    grid-auto-flow: column;
+    margin-left: 20px;
+    margin-right: 40px;
+    transition-duration: 300ms;
+}
+
+.grid8-img-with-text-container:hover {
+    background-color: #bbf7d0;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.grid8-text-container>span:nth-child(1) {
+    font-size: 1rem;
+    
+}
+
+
+
+.grid8-text-container>span:nth-child(2) {
+    font-size: 0.8rem;
+    color: rgb(133, 132, 132);
+}
+
+.grid8-text-container{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    text-wrap: balance;
+}
