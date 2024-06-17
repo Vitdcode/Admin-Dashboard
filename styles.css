@@ -9,7 +9,6 @@ body {
     margin: 0;
     padding: 0;
     letter-spacing: 0.5px;
-    
 }
 
 .main-container {
@@ -53,6 +52,7 @@ body {
     padding: 10px;
     border-radius: 10px;
     transition: background-color 0.5s;
+    
     
 }   
 
@@ -439,7 +439,7 @@ input:focus {
     grid-row: 2/4;
     min-height: 300px;
     max-height: 390px;
-    min-width: 207px;
+    min-width: 250px;
     overflow:hidden !important;
 }
 
@@ -451,9 +451,11 @@ input:focus {
 .main-content-grid-7 h4 {
     margin-top: 30px;
     margin-left: 40px;
-    max-width: 80%;
+    max-width: 70%;
     color: rgb(71, 49, 122, 0.9);
 }
+
+
 
 .text-seperation-line{
     display: grid;
@@ -473,7 +475,7 @@ input:focus {
     margin-top: 200px;
     min-height: 300px;
     max-height: 400px;
-    min-width: 207px;
+    min-width: 250px;
     
 }
 
@@ -483,25 +485,43 @@ input:focus {
 }
 
 .grid8-img-with-text-container {
+    position: relative;
+    overflow: hidden;
     display: grid;
     gap: 10px;
-    align-items: center;
+    padding: 10px;
+    justify-content: start;
     grid-auto-flow: column;
     margin-left: 20px;
-    margin-right: 40px;
+    margin-right: 30px;
     transition-duration: 300ms;
 }
 
 .grid8-img-with-text-container:hover {
-    background-color: #bbf7d0;
-    padding: 10px;
-    border: none;
+
+    background-color: rgb(187, 247, 208);
     border-radius: 10px;
+    color: rgb(50, 8, 146);
+    
 }
+
+.grid8-img-with-text-container:hover .purple-line-small {
+    height: 100%;
+    transition-duration: 300ms;
+} 
+
+.purple-line-small{
+    position: absolute;
+    background-color: rgb(94, 64, 169);
+    height: 0;
+    width: 5px;
+   
+    transition-duration: 300ms;
+}
+
 
 .grid8-text-container>span:nth-child(1) {
     font-size: 1rem;
-    
 }
 
 
@@ -513,7 +533,11 @@ input:focus {
 
 .grid8-text-container{
     display: flex;
+    width: 140px;
     gap: 5px;
     flex-direction: column;
     text-wrap: balance;
 }
+
+
+
